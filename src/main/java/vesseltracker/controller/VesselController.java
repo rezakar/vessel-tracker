@@ -1,5 +1,6 @@
 package vesseltracker.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,7 @@ import vesseltracker.service.VesselService;
 import java.util.List;
 
 @RestController
+@CrossOrigin("http://localhost:4200")
 public class VesselController {
 
     private VesselService vesselService;
